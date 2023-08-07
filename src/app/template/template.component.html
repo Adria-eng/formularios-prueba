@@ -1,0 +1,30 @@
+<h1>Formulario</h1>
+<div class="mb-3">
+    <label for="exampleFormControlInput1" class="form-label">Cedula</label>
+    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="0701234567" name="cedula" [(ngModel)]="cedula">
+  </div>
+  <div class="mb-3">
+    <label for="exampleFormControlInput1" class="form-label">Nombre</label>
+    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Jose Bermeo" name="nombre" [(ngModel)]="nombre">
+  </div>
+  <div class="fecha">
+    <label for="exampleFormControlInput1" class="form-label">Fecha de aparición:</label>
+    <div class="datePicker">
+      <input type="date" id="datePicker" name="aparicion" name="fecha" [(ngModel)]="fecha">
+    </div>
+  </div>
+<br>
+  <div class="casacomics">
+    <label for="exampleFormControlInput1" class="form-label">Ciudades</label>
+    <select class="form-select" aria-label="Default select example" name="casa" name="ciudad" [(ngModel)]="ciudad">
+      <option selected>Seleccione una ciudad</option>
+      <option value="Pasaje">Pasaje</option>
+      <option value="Machala">Machala</option>
+      <option value="Santa Rosa">Santa Rosa</option>
+    </select>
+  </div>
+<br>
+  <div class="botones">
+    <button type="button" class="btn btn-primary" (click)="crearPersona()">Guardar</button>
+    <button type="button" class="btn btn-primary" (click)="limpiar()">Cancelar</button>
+  </div>
